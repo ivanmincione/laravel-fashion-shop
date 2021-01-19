@@ -1,0 +1,15 @@
+.menu-header{
+    border-bottom: 1px solid white;
+    padding: $spacing;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            margin-right: $spacing * 2;
+        }
+
+    }
+}

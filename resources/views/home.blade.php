@@ -1,16 +1,23 @@
 @extends("layouts.app")
 
 @section("content")
-    <h1>Home products</h1>
+    <div class="container">
+        <h1 class="uppercase">Home products</h1>
 
-    <ul>
-        @foreach ($dresses as $item)
-            <li>
-                <p>{{ $item->name }}</p>
-                <p> {{ $item->color}}</p>
-                <p>{{ $item->size}}</p>
-                <p>{{ $item->price}}</p>
-            </li>
-        @endforeach
-    </ul>
+        <div class="box-card">
+            @foreach ($dresses as $item)
+                <div class="card-product">
+                    <ul>
+                        <li>
+                            <p class="uppercase"> Type : </p> <span>{{ $item->name }} </span>
+                            <p class="uppercase"> Color : </p> <span>{{ $item->color }} </span>
+                            <p class="uppercase"> Size : </p> <span>{{ $item->size }} </span>
+                            <p class="uppercase"> Price : </p> <span> € {{ $item->price }} </span>
+                        </li>
+                    </ul>
+                </div>
+            @endforeach
+        </div>
+
+    </div>
 @endsection

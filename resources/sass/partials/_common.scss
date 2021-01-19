@@ -1,0 +1,32 @@
+body{
+    background-color: $mainColor;
+    color: white;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: $fontSize * 2;
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: red;
+}
+
+li{
+    list-style-type: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,14 @@
+.box-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-product{
+    width: 200px;
+    border: 3px solid white;
+    margin: $spacing;
+
+
+}
